@@ -1,0 +1,22 @@
+{
+  "name": "json-immutable",
+  "version": "0.3.0",
+  "main": "lib/index",
+  "scripts": {
+    "prepublish": "babel src/ -d lib/",
+    "test": "npm run prepublish && ava"
+  },
+  "peerDependencies": {
+    "immutable": "3.x.x"
+  },
+  "dependencies": {
+    "debug": "2.2.x",
+    "json-stream-stringify": "1.5.x"
+  },
+  "devDependencies": {
+    "ava": "0.16.x",
+    "babel-cli": "6.14.x",
+    "babel-preset-es2015": "6.14.x",
+    "immutable": "3.8.x"
+  }
+}
